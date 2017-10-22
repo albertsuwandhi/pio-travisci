@@ -19,3 +19,4 @@ deploy:
   file: $TRAVIS_BUILD_DIR/.pioenvs/nodemcu/firmware.elf
   on:
     repo: albertsuwandhi/pio-travisci
+    all_branches: true
