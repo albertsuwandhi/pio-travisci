@@ -1,6 +1,17 @@
+language: python
+python:
+- '2.7'
+sudo: false
+cache:
+  directories:
+  - ~/.platformio
+install:
+- gem install rake
+- pip install platformio
+- pio update
 
-
-
+script:
+- platformio run -e nodemcu
 deploy:
   provider: releases
   api_key:
